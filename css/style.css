@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+    background-color: black;
+}
+
+.parentSectionIntro {
+  
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.parentSectionIntro .textIntro {
+    color: #444;
+    font-size: 50vw;
+    flex: 3;
+    font-weight: 800;
+    text-align: center;
+    cursor: default;
+}
+.parentSectionIntro .imageIntro {
+    flex: 1;
+}
+.parentSectionIntro .imageIntro img {
+    width: 100%;
+}
+
+
+/* Start Section Two  */
+.praentSectionName {
+    background-color: rebeccapurple;
+    height: 100vh
+}
+.praentSectionName .name {
+    font-size: 10vw;
+    text-align: center;
+    line-height: 100vh;
+}
