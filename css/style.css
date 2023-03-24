@@ -9,6 +9,7 @@
 
 .container {
     background-color: black;
+    overflow: hidden;
 }
 
 .parentSectionIntro {
@@ -17,8 +18,8 @@
     align-items: center;
     overflow: hidden;
     height: 100vh;
-    width: 90%;
-    margin: auto;
+    /* width: 90%;
+    margin: auto; */
 }
 
 .parentSectionIntro .textIntro {
@@ -28,22 +29,132 @@
     font-weight: 800;
     text-align: center;
     cursor: default;
+    transition: all .5;
+    animation: an 5s infinite;
 }
+
 .parentSectionIntro .imageIntro {
-    flex: 1;
+    flex: .9;
 }
 .parentSectionIntro .imageIntro img {
     width: 100%;
 }
 
 
-/* Start Section Two  */
+/* First Conatiner   */
 .praentSectionName {
-    background-color: rebeccapurple;
-    height: 100vh
+    background-color: white;
+    height: 50vh
 }
 .praentSectionName .name {
     font-size: 10vw;
     text-align: center;
-    line-height: 100vh;
+    line-height: 50vh;
+}
+/* Third Conatiner */
+.jobTitle {
+    height: 50vh;
+}
+.jobTitle.one {
+    background: url(../images/bg1.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.jobTitle .jobOne , 
+.jobTitle .jobTwo {
+    color: #999;
+    font-size: 8vw;
+    text-align: center;
+    line-height: 50vh;
+}
+.jobTitle .jobTwo {
+    text-align: right !important;
+    margin-right: -100px;
+}
+/* Fourthly Conatiner   */
+.jobTitle.two {
+    background: rebeccapurple url(../images/bg2.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fifth Concatiner  */
+.projects {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+.projects h2 {
+    color: #444;
+    font-size: 10vw;
+    margin-bottom: 20px;
+}
+.projects .project {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 2;
+
+}
+.projects .project .framProject {
+    width: 300px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.projects .project .framProject img {
+    width: 100%;
+
+}
+.projects .project .framProject .por {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 278px;
+    /* border-radius: 30px; */
+
+}
+.projects .project .framProject .por img {
+    border-radius: 35px;
+    width: 100%;
+
+}
+.project .titleProject {
+    color: #444;
+    text-align: center;
+    flex: 2;
+    cursor: default;
+}
+.project .titleProject h3 {
+    font-size: 5vw;
+}
+.project .titleProject button {
+    width: 100px;
+    height: 40px;
+    background-color: #999;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    height: 200px;
+    background-color: #999;
+}
+
+
+@keyframes an {
+    0% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
 }
